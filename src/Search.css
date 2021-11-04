@@ -1,0 +1,39 @@
+form {
+    text-align: right;
+  }
+  
+  input.enter-city {
+    font-family: "Baloo Thambi 2", cursive;
+    width: 40%;
+    padding: 10px 10px;
+    border: 3px ridge forestgreen;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    position: relative;
+    top: -20px;
+  }
+  
+  input.enter-city:hover {
+    border: 3px ridge royalblue;
+    background-color: rgb(234, 237, 245);
+  }
+  
+  input.search {
+    transition: all 200ms ease;
+  }
+  
+  input.search:hover {
+    opacity: 50%;
+  }
+  
+  input.current {
+    background: none;
+    border: none;
+    transition: all 200ms ease;
+  }
+  
+  input.current:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+  

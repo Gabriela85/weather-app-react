@@ -1,0 +1,29 @@
+div.column {
+    column-count: 5;
+    color: rgb(26, 107, 26);
+    background-color: #fbed96;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    div.column {
+      column-count: 3;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.column {
+      column-count: 1;
+    }
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  span.forecast {
+    font-weight: 900;
+    color: rgb(15, 51, 26);
+  }
+  
