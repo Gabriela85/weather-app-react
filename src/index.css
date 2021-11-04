@@ -58,3 +58,10 @@ p.humidity-wind {
   color: rgb(1, 85, 1);
   font-size: 1.5vw;
 }
+
+span.opensourced a{
+  color:rgb(9, 43, 236);
+  position: unset;
+  font-size: unset;
+  cursor: pointer;
+}

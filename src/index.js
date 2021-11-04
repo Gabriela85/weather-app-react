@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import Search from "./Search";
-import Time from "./Time";
+import Weather from "./Weather";
 import Forecast from "./Forecast";
 
 import "./Search.css";
@@ -13,8 +13,7 @@ function App() {
   return (
     <div className="App">
       <Search />
-      <Time />
-      <Forecast />
+      <Weather />
     </div>
   );
 }

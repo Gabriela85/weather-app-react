@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import Weather from "./Weather";
 
 import Searchf from "../src/media/frog.png";
 import Currentloc from "../src//media/current-loc.png";
 
 export default function Search() {
+  
+  let [city, setCity] = useState("");
+  let [forecast, setForecast] = useState("");
+
+  function handleSearch(event) {
+    event.preventDefault();
+    setForecast(<Weather city={city} />);
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
+  
   return (
-    <form id="search-city">
-      <input
-        type="text"
-        className="enter-city"
-        id="submit-city"
-        placeholder="Enter a city"
-      ></input>
+    <form onSubmit={handleSearch}>
+     <input type="type" placeholder="Enter a city..." onChange={updateCity} />
 
       <input
         type="image"
@@ -19,7 +28,7 @@ export default function Search() {
         src={Searchf}
         alt="Submit"
         width="15%"
-      ></input>
+       /> 
 
       <input
         type="image"
@@ -28,7 +37,9 @@ export default function Search() {
         alt="Submit"
         width="15%"
         id="current_location"
-      ></input>
+      />
+      <h1>{forecast}</h1>
     </form>
+    
   );
 }
