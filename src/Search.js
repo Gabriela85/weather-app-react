@@ -1,7 +1,7 @@
 import React from "react";
 
-import Searchf from "../media/frog.png";
-import Currentloc from "../media/current-loc.png";
+import Searchf from "../src/media/frog.png";
+import Currentloc from "../src//media/current-loc.png";
 
 export default function Search() {
   return (

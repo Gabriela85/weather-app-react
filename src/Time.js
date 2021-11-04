@@ -1,5 +1,5 @@
 import React from "react";
-import Sunnyfrog from "../media/sunny-frog.png";
+import Sunnyfrog from "../src/media/sunny-frog.png";
 
 export default function Time() {
   return (

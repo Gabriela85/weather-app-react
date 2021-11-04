@@ -1,9 +1,9 @@
 import React from "react";
 
-import Cloud from "../media/cloud.png";
-import Rain from "../media/rain.png";
-import Sun from "../media/sun.png";
-import Covered from "../media/covered.png";
+import Cloud from "../src/media/cloud.png";
+import Rain from "../src//media/rain.png";
+import Sun from "../src//media/sun.png";
+import Covered from "../src//media/covered.png";
 
 export default function Forecast() {
   return (
