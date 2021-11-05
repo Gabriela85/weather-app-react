@@ -8,7 +8,6 @@ export default function Weather(props) {
   let [description, setDescription] = useState(null);
   let [humidity, setHumidity] = useState(null);
   let [wind, setWind] = useState(null);
-  let [icon, setIcon] = useState(null);
 
   function showTemperature(response) {
     setTemperature(response.data.main.temp);
@@ -19,7 +18,6 @@ export default function Weather(props) {
 
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=6adf9ca14282ecabf35274d15e8bf416&units=metric`;
   axios.get(url).then(showTemperature);
-  let picture = `http://openweathermap.org/img/wn/${icon}@2x.png`;
 
   if (props.city == null) {
 
@@ -48,7 +46,7 @@ export default function Weather(props) {
         {Math.round(temperature)}
         </span>
 
-        <a href="#" id="celsius">
+        <a href="/" id="celsius">
           °C 
         </a>
       </h3>
