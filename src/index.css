@@ -64,4 +64,5 @@ span.opensourced a{
   position: unset;
   font-size: unset;
   cursor: pointer;
+  margin-left: 2rem;
 }

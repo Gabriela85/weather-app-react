@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Weather from "./Weather";
+import "./Search.css";
 
 import Searchf from "../src/media/frog.png";
 import Currentloc from "../src//media/current-loc.png";
@@ -20,7 +21,7 @@ export default function Search() {
   
   return (
     <form onSubmit={handleSearch}>
-     <input type="type" placeholder="Enter a city..." onChange={updateCity} />
+     <input type="type" className="enter-city" placeholder="Enter a city..." onChange={updateCity} />
 
       <input
         type="image"
