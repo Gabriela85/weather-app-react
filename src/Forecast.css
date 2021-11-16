@@ -1,29 +1,64 @@
-div.column {
-    column-count: 5;
+.date, .description{
+    text-align: left;
+    margin-left: 5rem;
+    font-size: 2rem;
+      color: rgb(1, 2, 1);
+   text-shadow: 
+   -8px -8px 12px rgba(255,255,255,0.3),
+   8px 8px 12px rgba(0,0,0,0.2);
+   caret-color:#262626;
+   outline: none; 
+   text-transform: capitalize;
+}
+
+.currentTemp{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: forestgreen;
+    text-shadow: 
+    -8px -8px 12px rgba(255,255,255,0.3),
+    8px 8px 12px rgba(0,0,0,0.2);
+    caret-color:#262626;
+    outline: none; 
+    font-size: 3rem;
+
+}
+
+.currentTemp > span {
+    margin: 1rem;
+  }
+
+.humidity{
+    text-align: right;
+    margin-right: 5rem;
+    font-size: 1.4rem;
+      color: forestgreen;
+   text-shadow: 
+   -8px -8px 12px rgba(255,255,255,0.3),
+   8px 8px 12px rgba(0,0,0,0.2);
+   caret-color:#262626;
+   outline: none;
+}
+
+div.row{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
     color: rgb(26, 107, 26);
-    background-color: #fbed96;
     text-align: center;
-    border-radius: 10px;
+   
+}
+
+div.row > div.col {
+    margin: 2rem;
   }
-  
-  @media screen and (max-width: 992px) {
-    div.column {
-      column-count: 3;
-    }
+
+  a{
+      text-decoration: none;
+      color: forestgreen;
   }
-  
-  @media screen and (max-width: 600px) {
-    div.column {
-      column-count: 1;
-    }
+  sup{
+      font-size: 2rem;
   }
-  
-  p {
-    margin: 0;
-  }
-  
-  span.forecast {
-    font-weight: 900;
-    color: rgb(15, 51, 26);
-  }
-  
+
